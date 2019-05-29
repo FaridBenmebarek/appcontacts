@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Contact from './Contact'
-import {Consumer} from '../context'
+import {Consumer} from '../../context'
 
 class List extends Component {
 
@@ -11,6 +11,7 @@ class List extends Component {
         {value => {
           return (
             <div>
+              <h1 className="display-4 my-4">Liste des Contacts :</h1>
               {value.contacts.map(
                 contact => (
                   <Contact
